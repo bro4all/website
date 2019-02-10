@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Omar Habra Resume</title>
+</head>
+<body>
+<h1>Omar Habra</h1>
+<br>
+<img
+  src="image/omar.jpg"
+  alt="Omar habra "
+>
+<script>
+function passwd(){
+
+  var password = prompt('Enter the password to view');
+  if(password.toLowerCase() == "frankbutt"){
+    window.open("file:///Users/Bro4all/Desktop/untitled%20folder/transcript.html")
+  }else{
+    alert("incorrect password!! please try again");
+  }
+}
+</script>
+<input type="button" value="Transcript" onClick="passwd()"/>
+  <br>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<hr>
+<body>
+<select name="menu1" id="menu1">
+<option value="https://app.joinhandshake.com/users/7734622">Hanshake</option>
+<option value="https://github.com/bro4all">Github</option>
+<option value="https://www.linkedin.com/in/omar-habra-776905a1/">Linkedin</option>
+</select>
+<script type="text/javascript">
+ var urlmenu = document.getElementById( 'menu1' );
+ urlmenu.onchange = function() {
+      window.open( this.options[ this.selectedIndex ].value );
+ };
+</script>
+<hr>
+<head>
+  <style>
+     /* Set the size of the div element that contains the map */
+    #map {
+      height: 400px;  /* The height is 400 pixels */
+      width: 100%;  /* The width is the width of the web page */
+     }
+  </style>
+</head>
+  <h3>Address</h3>
+  <!--The div element for the map -->
+  <div id="map"></div>
+  <script>
+// Initialize and add the map
+function initMap() {
+// The location of Uluru
+var uluru= {lat: 37.335452, lng: -121.881018};
+// The map, centered at Uluru
+var map = new google.maps.Map(
+    document.getElementById('map'), {zoom: 4, center: uluru});
+// The marker, positioned at Uluru
+var marker = new google.maps.Marker({position: uluru, map: map});
+}
+  </script>
+  <!--Load the API from the specified URL
+  * The async attribute allows the browser to render the page while the API loads
+  * The key parameter will contain your own API key (which is not needed for this tutorial)
+  * The callback parameter executes the initMap() function
+  -->
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWbYb-6W74KpeEmjCPAwV3Do7ewcIjlVE&callback=initMap">
+  </script>
+  </body>
+
+
+</html>
